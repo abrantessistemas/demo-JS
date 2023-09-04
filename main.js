@@ -24,5 +24,6 @@ imagem.src = urlDaImagem;
 // Define um texto alternativo (opcional)
 imagem.alt = 'Descrição da imagem';
 imagem.width = 100;
+imagem.height = 210;
 // Adiciona a imagem ao elemento de contêiner no documento
 document.getElementById('imagem-container').appendChild(imagem);
