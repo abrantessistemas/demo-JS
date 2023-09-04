@@ -13,7 +13,7 @@ document.querySelector('#frase').innerHTML =
   'Métodologias ágeis de desenvolvimento de software.';
 
 // URL direto da imagem no Google Fotos
-var urlDaImagem = 'img/adriano.jpeg';
+var urlDaImagem = 'img/adriano.png';
 
 // Criação de um elemento de imagem
 var imagem = document.createElement('img');
@@ -24,6 +24,5 @@ imagem.src = urlDaImagem;
 // Define um texto alternativo (opcional)
 imagem.alt = 'Descrição da imagem';
 imagem.width = 100;
-imagem.height = 210;
 // Adiciona a imagem ao elemento de contêiner no documento
 document.getElementById('imagem-container').appendChild(imagem);
