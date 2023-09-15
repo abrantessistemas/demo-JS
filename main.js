@@ -3,22 +3,16 @@ import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js';
 
-function draw() {
-  var canvas = document.getElementById("canvas");
-  if (canvas.getContext) {
-    var ctx = canvas.getContext("2d");
+var canvas = document.getElementById('canvas');
+if (canvas.getContext) {
+  var ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = "rgb(200,0,0)";
-    ctx.fillRect(10, 10, 55, 50);
+  ctx.fillStyle = 'rgb(200,0,0)';
+  ctx.fillRect(10, 10, 55, 50);
 
-    ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-    ctx.fillRect(30, 30, 55, 50);
-  }
+  ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+  ctx.fillRect(30, 30, 55, 50);
 }
-
-
-
-
 
 document.querySelector('#titulo').innerHTML = 'ADRIANO ABRANTES DE ANDRADE';
 document.querySelector('#subtitulo').innerHTML =
@@ -43,25 +37,3 @@ imagem.alt = 'Descrição da imagem';
 imagem.width = 100;
 // Adiciona a imagem ao elemento de contêiner no documento
 document.getElementById('imagem-container').appendChild(imagem);
-
-//Testes
-const palavra = 'faroeste caboclo';
-document.querySelector('#p1').innerHTML = palavra.slice(2, 9);
-
-const palavra2 = 'desistir é para os fracos';
-document.querySelector('#p2').innerHTML = palavra2.split(' ');
-
-const palavra3 = 'temos todo o tempo do mundo!';
-document.querySelector('#p3').innerHTML = palavra3[14];
-
-const palavra4 = 'vem pra mim para gente se ver de novo.';
-document.querySelector('#p4').innerHTML = palavra4.includes('pamonha');
-
-function atualizarParagrafo() {
-  // Pega o valor do campo de texto
-  var valorCampo = document.getElementById('campoTexto').value;
-
-  // Atualiza o texto do parágrafo
-  document.getElementById('paragrafo').textContent =
-    'Valor atualizado: ' + valorCampo;
-}
